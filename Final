@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Python Documentation</title>
+</head>
+<body>
+<nav id="navbar">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png">
+  <header id="title">Python Documentation</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+    </li>
+
+    <li>
+      <a class="nav-link" href="#Data_Types">Data Types</a>
+    </li>
+
+    <li>
+      <a class="nav-link" href="#Hello_World!">Hello World!</a>
+    </li>
+
+    <li>
+      <a class="nav-link" href="#Numbers">Numbers</a>
+    </li>
+
+    <li>
+      <a class="nav-link" href="#If_Statements">If Statements</a>
+    </li>
+
+    <li>
+      <a class="nav-link" href="#While_Statements">While Statements</a>
+    </li>
+  </ul>
+</nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</p>
+      <p>Steps on getting started with Python:</p>
+      <ol>
+        <li>Open Python.org</li>
+        <li>Select the right Python verison</li>
+        <li>Download Python IDLE onto your computer</li>
+        <li>Open Python</li>
+        <li>Done!</li>   
+      </ol>
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <p>Python currently supports a variety of different data types, which are essential for storing and manipulating different kinds of information. Here are some fundamental Python data types:</p>
+      <ul>
+        <li>
+          Integers (int)
+        </li>
+        <p>Used for whole numbers without any decimal points.
+          <p class="example">Example: x = 5</p>
+        </p>
+        <li>
+          Floats (float)
+        </li>
+        <p>Used for numbers with decimal points.
+          <p class="example">Example: x = 3.14</p>
+        </p>
+        <li>
+          Strings (str)
+        </li>
+        <p>Used for sequences of characters, enclosed in single (' '), double (" "), or triple (''' ' ''') quotes
+          <p class="example">Example = "Hello World!"</p>
+        </p>
+        <li>
+          Booleans (bool) 
+        </li>
+        <p>Used for representing truth values, either True or False.
+          <p class="example">Example = 'is_python_fun = True'</p>
+        </p>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Hello_World!">
+      <header>Hello World!</header>
+      <p>Let's print your first ever line of code! The most iconic phrase first time coders use is "Hello World!"</p>
+      <p>Try it out on Python:</p>
+      <code>print("Hello World!")</code>
+      <p>Go ahead and try out other sentences with the <code>print()</code> function, such as:</p>
+      <p><code>print("My name is John!")</code></p>
+      <p><code>print("Hi Mom!")</code></p>
+      <p><code>print("I love Python")</code></p>
+    </section>
+
+    <section class="main-section" id="Numbers">
+      <header>Numbers</header>
+      <p> Python interpreter functions like a basic calculator, allowing you to input expressions, and it will output the computed values. The syntax for expressions is simple: you can use the standard arithmetic operators (+, -, *, /) for mathematical operations, and parentheses (()) for grouping.
+      </p>
+      <p>For example:</p>
+      <p><code>print(2 + 2)</code></p>
+      <p><code>print(10 / 2)</code></p>
+      <p><code>print(5 * 10 + 2)</code></p>
+    </section>
+
+    <section class="main-section" id="If_Statements">
+      <header>If Statements</header>
+      <p>the if statement is a fundamental control structure that allows you to conditionally execute a block of code based on a specified condition. Here's a brief explanation:</p>
+      <pre>
+        <code>
+        x = 10
+        if x > 5:
+            print("x is greater than 5")
+        </code>
+      </pre>
+      <pre>
+        <code>
+        y = 3
+        if y % 2 == 0:
+            print("y is even")
+        else:
+            print("y is odd")
+        </code>
+      </pre>
+      <pre>
+        <code>
+        z = 0
+        if z > 0:
+            print("z is positive")
+        elif z < 0:
+            print("z is negative")
+        else:
+            print("z is zero")
+        </code>
+      </pre>
+    </section>
+
+    <section class="main-section" id="While_Statements">
+      <header>While Statements</header>
+      <p>A while statement is used to create a loop that continues executing as long as a specified condition is true. The general syntax of a while loop in Python is as follows:</p>
+      <pre>
+        <code>
+          # Example: Counting down from 5 to 1
+          count = 5
+
+          while count > 0:
+              print(count)
+              count -= 1
+
+          print("Blast off!")
+        </code>
+      </pre>
+    </section>
+
+    <footer>
+      <header>Reference</header>
+      <p>All the documentation was from <a href="https://www.python.org/" alt="python">Python.org</a></p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
+
+
+body {
+  background-color: #e8eaeb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Gill Sans", sans-serif; 
+}
+
+img {
+  width: 150px;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+section {
+  margin-top: 40px;
+
+}
+
+#navbar {
+  background-color: #4689c2;
+  width: 100%;
+  border-bottom: 1px;
+  border-radius: 10px;
+}
+
+#navbar li {
+  color: black;
+  border-top: 1px solid black;
+  list-style: none;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  transition: text-indent 0.1s ease-in-out;
+}
+
+#navbar a:hover {
+  font-weight: 500;
+  text-indent: 3px;
+  background-color: #6a9ac4;
+}
+
+p {
+  margin: 10px;
+}
+
+ol {
+  margin-left: 30px;
+}
+
+#main-doc {
+  margin: 0 auto;
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#title {
+  text-align: center;
+}
+
+code {
+  display: block;
+  width: 1000px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: black;
+  background-color: rgba(146, 162, 176, .1);
+  border-radius: 10px;
+}
+
+.example {
+  color: red;
+}
+
+footer {
+  margin-top: -50px;
+  margin-right: 55px;
+  padding: 30px;
+  text-align: left;
+  color: black;
+  background-color: #4689c2;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 815px) {
+  body {
+    flex-direction: row;
+  }
+  #navbar {
+    width: 300px;
+    position: fixed;
+    height: 840px;
+    resize: horizontal;
+    overflow-x: scroll;
+  }
+  #main-doc {
+    margin: 0 20px; 
+    margin-left: 350px;
+  }
+}
